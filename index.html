@@ -45,6 +45,8 @@
   --band-accent: #A9C8EE;
   --band-line: rgba(238, 242, 247, .2);
   --logo-tile: #FFFFFF;
+  --wa: #25D366;
+  --on-wa: #FFFFFF;
 
   --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
   --body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
@@ -304,6 +306,23 @@ textarea { min-height: 8rem; resize: vertical; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 1.5rem; }
 .site-footer a { text-decoration: none; }
 .site-footer a:hover { color: var(--ink); }
+
+/* WhatsApp chat button (as on the previous site) */
+.wa { position: fixed; z-index: 20; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); display: grid; justify-items: end; gap: 0.75rem; }
+.wa-toggle { width: 58px; height: 58px; border-radius: 50%; border: 0; cursor: pointer; display: grid; place-items: center; background: var(--wa); color: var(--on-wa); box-shadow: 0 6px 20px -6px rgba(21, 37, 58, .45); transition: transform .15s ease; }
+.wa-toggle:hover { transform: scale(1.05); }
+.wa-toggle svg { width: 30px; height: 30px; }
+.wa-card { width: min(320px, calc(100vw - 32px)); background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 18px 40px -16px rgba(21, 37, 58, .45); overflow: hidden; }
+.wa-head { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 0.75rem; align-items: center; padding: 0.9rem 1rem; background: var(--band); color: var(--on-band); }
+.wa-head img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: 60% 35%; }
+.wa-kicker { font-size: 0.78rem; color: var(--on-band-muted); }
+.wa-name { font-weight: 600; }
+.wa-close { background: none; border: 0; color: var(--on-band); font-size: 1.5rem; line-height: 1; cursor: pointer; padding: 0.25rem; }
+.wa-body { padding: 1rem; display: grid; gap: 1rem; }
+.wa-bubble { background: var(--accent-soft); border-radius: 0 10px 10px 10px; padding: 0.75rem 0.9rem; font-size: 0.95rem; }
+.wa-cta { display: inline-flex; justify-content: center; align-items: center; gap: 0.5rem; padding: 0.8em 1.2em; border-radius: var(--radius); background: var(--wa); color: var(--on-wa); font-weight: 600; text-decoration: none; }
+.wa-cta svg { width: 20px; height: 20px; }
+@media (max-width: 600px) { .site-footer { padding-bottom: 6rem; } }
 
 /* Load sequence: content is visible at rest; the hero only eases in. */
 @keyframes rise { from { transform: translateY(12px); opacity: .001; } to { transform: none; opacity: 1; } }
@@ -1184,7 +1203,7 @@ textarea { min-height: 8rem; resize: vertical; }
         <dl class="contact-list">
           <div><dt>Adresse</dt><dd>Püttjer &amp; Püttjer GbR<br>Krayenkamp 10<br>20459 Hamburg</dd></div>
           <div><dt>Telefon</dt><dd><a href="tel:+494036099223">040 / 36 09 92 23</a></dd></div>
-          <div><dt>Mobil</dt><dd><a href="tel:+4915144980413">+49 151 / 44 98 04 13</a></dd></div>
+          <div><dt>Mobil</dt><dd><a href="tel:+4915144980413">+49 151 / 44 98 04 13</a> · <a href="https://wa.me/4915144980413" target="_blank" rel="noopener">WhatsApp</a></dd></div>
           <div><dt>E-Mail</dt><dd><a href="mailto:info@puettjer-coaching.de">info@puettjer-coaching.de</a></dd></div>
         </dl>
         <div class="social">
@@ -1235,8 +1254,30 @@ textarea { min-height: 8rem; resize: vertical; }
   </div>
 </footer>
 
+<div class="wa">
+  <div class="wa-card" id="wa-card" role="dialog" aria-labelledby="wa-title" hidden>
+    <div class="wa-head">
+      <img src="assets/duo.jpg" alt="" width="44" height="44" loading="lazy">
+      <div><p class="wa-kicker">Ihre Ansprechpartner</p><p class="wa-name" id="wa-title">Birte und Christian</p></div>
+      <button class="wa-close" id="wa-close" type="button" aria-label="Schließen">×</button>
+    </div>
+    <div class="wa-body">
+      <p class="wa-bubble"><strong>Sie haben Fragen?</strong><br>Schreiben Sie uns, wir melden uns umgehend zurück.</p>
+      <a class="wa-cta" href="https://wa.me/4915144980413" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Let’s talk!</a>
+    </div>
+  </div>
+  <button class="wa-toggle" id="wa-toggle" type="button" aria-expanded="false" aria-controls="wa-card" aria-label="Per WhatsApp schreiben"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></button>
+</div>
+
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+  (function () {
+    var card = document.getElementById('wa-card'), toggle = document.getElementById('wa-toggle');
+    function set(open) { card.hidden = !open; toggle.setAttribute('aria-expanded', String(open)); }
+    toggle.addEventListener('click', function () { set(card.hidden); });
+    document.getElementById('wa-close').addEventListener('click', function () { set(false); toggle.focus(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !card.hidden) { set(false); toggle.focus(); } });
+  })();
   // Placeholder until the form is connected to a mail backend: prepares an e-mail in the visitor's mail program.
   document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
