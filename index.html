@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <!-- ARTIFACT-START -->
-<title>Püttjer &amp; Püttjer</title>
-<meta name="description" content="Püttjer &amp; Püttjer Coaching Hamburg: Kommunikation und Karriere, Leadership und Teambuilding, Persönlichkeitsentwicklung. Seminare, Workshops und Einzelcoaching am Krayenkamp 10.">
+<title>Coaching Hamburg: Karriere, Leadership &amp; Führungskräfte | Püttjer &amp; Püttjer</title>
+<meta name="description" content="Karriere-, Leadership- und Führungskräfte-Coaching in Hamburg am Michel. C-Level-Coaching, Assessment-Center-Training, Outplacement und Teambuilding. Ab 140 € pro Stunde.">
+<!-- STAGING: keeps the github.io preview out of search results. Remove this line when the site goes live on puettjer-coaching.de. -->
+<meta name="robots" content="noindex, follow">
 <!-- Link previews (WhatsApp, LinkedIn, Facebook …) need absolute URLs. Replace the github.io address when the custom domain goes live. -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
@@ -134,6 +136,7 @@ p { margin: 0; }
 .hero-copy { display: grid; gap: 1.5rem; min-width: 0; }
 .hero h1 { font-size: var(--step-4); font-weight: 500; }
 .hero h1 em { font-style: italic; color: var(--accent); }
+.h1-kicker { display: block; margin-bottom: 1.5rem; font-variation-settings: normal; }
 .hero .lede { font-size: var(--step-1); line-height: 1.5; color: var(--muted); max-width: 36ch; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .hero-photo { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.6rem; min-width: 0; }
@@ -252,10 +255,19 @@ details[open] summary::before { content: "–"; }
 @media (max-width: 760px) { .books { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 480px) { .books { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 1rem; } .books span { font-size: 0.88rem; } }
 
+.books-more { margin-top: 2rem; }
+
 /* References */
 .refs { columns: 4 13rem; column-gap: 2.5rem; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); padding-top: 1.25rem; }
 .refs li { break-inside: avoid; padding: 0.4rem 0; font-size: 0.95rem; border-bottom: 1px solid var(--line); }
 .refs li.more { color: var(--muted); font-style: italic; }
+
+/* FAQ */
+.faq { margin: 0; border-top: 1px solid var(--ink); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(2rem, 5vw, 4rem); }
+.faq div { padding-block: 1.5rem; border-bottom: 1px solid var(--line); display: grid; gap: 0.6rem; align-content: start; min-width: 0; }
+.faq dt { font: 600 var(--step-1)/1.3 var(--display); font-variation-settings: "opsz" 14; text-wrap: balance; }
+.faq dd { margin: 0; color: var(--muted); }
+@media (max-width: 820px) { .faq { grid-template-columns: 1fr; } }
 
 /* Contact */
 .contact { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(2rem, 6vw, 5rem); }
@@ -300,6 +312,567 @@ textarea { min-height: 8rem; resize: vertical; }
 .hero-copy > *:nth-child(3) { animation-delay: .16s; }
 .hero-copy > *:nth-child(4) { animation-delay: .24s; }
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://puettjer-coaching.de/#business",
+   "name": "Püttjer & Püttjer",
+   "legalName": "Püttjer & Püttjer GbR",
+   "alternateName": "Püttjer & Püttjer Coaching Hamburg",
+   "slogan": "Schnell. Direkt. Erfolgreich.",
+   "description": "Coaching und Beratung in Hamburg für Kommunikation und Karriere, Leadership und Teambuilding sowie Persönlichkeitsentwicklung. Seminare, Workshops und Einzelcoaching für Unternehmen und Privatpersonen.",
+   "url": "https://puettjer-coaching.de/",
+   "image": "https://puettjer-coaching.de/assets/og-image.jpg",
+   "logo": "https://puettjer-coaching.de/assets/logo.svg",
+   "telephone": "+49 40 36099223",
+   "email": "info@puettjer-coaching.de",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Krayenkamp 10",
+    "postalCode": "20459",
+    "addressLocality": "Hamburg",
+    "addressCountry": "DE"
+   },
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Hamburg"
+    },
+    {
+     "@type": "Country",
+     "name": "Deutschland"
+    }
+   ],
+   "priceRange": "140 € – 2.000 €",
+   "founder": [
+    {
+     "@id": "https://puettjer-coaching.de/#birte"
+    },
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    }
+   ],
+   "employee": [
+    {
+     "@id": "https://puettjer-coaching.de/#birte"
+    },
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    }
+   ],
+   "knowsAbout": [
+    "C-Level Coaching",
+    "Karriereplanung",
+    "Outplacement",
+    "Management-Audits",
+    "Assessment-Center-Training",
+    "Bewerbungscoaching",
+    "Gehaltsverhandlung",
+    "Leadership-Training",
+    "Teambuilding",
+    "Topmanagement-Coaching",
+    "Agile Führung",
+    "Hybride Führung",
+    "Persönlichkeitsentwicklung",
+    "Resilienztraining",
+    "Work-Life-Balance"
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/company/p%C3%BCttjer-p%C3%BCttjer-coaching",
+    "https://www.instagram.com/puettjer.coaching/",
+    "https://www.facebook.com/puettjer.coaching"
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Buchung und Preise",
+    "itemListElement": [
+     {
+      "@type": "OfferCatalog",
+      "name": "Firmenkunden (netto zzgl. 19 % MwSt.)",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "name": "Impulsvortrag, 40 bis 60 Minuten",
+        "price": "400.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "400.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": false
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Workshop, 4 Stunden, bis zu 8 Teilnehmer*innen",
+        "price": "1200.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "1200.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": false
+        },
+        "description": "Zzgl. Raummiete und Anfahrtskosten"
+       },
+       {
+        "@type": "Offer",
+        "name": "Ganztagesworkshop, bis zu 8 Teilnehmer*innen",
+        "price": "2000.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "2000.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": false
+        },
+        "description": "Zzgl. Raummiete und Anfahrtskosten"
+       }
+      ]
+     },
+     {
+      "@type": "OfferCatalog",
+      "name": "Privatpersonen (inkl. 19 % MwSt.)",
+      "itemListElement": [
+       {
+        "@type": "Offer",
+        "name": "Coaching per Telefon oder Video-Call, pro Stunde",
+        "price": "140.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "140.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": true
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Coaching persönlich in Hamburg, pro Stunde",
+        "price": "180.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "180.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": true
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Bewerbungsunterlagen-Check",
+        "price": "200.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "200.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": true
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Vorbereitung auf Vorstellungsgespräche, telefonisch oder Video-Call",
+        "price": "190.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "190.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": true
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Vorbereitung auf Vorstellungsgespräche, persönlich in Hamburg",
+        "price": "250.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "250.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": true
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Assessment-Center-Vorbereitung, bis zu 3 Stunden, telefonisch oder Video-Call",
+        "price": "400.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "400.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": true
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Assessment-Center-Vorbereitung, 4 Stunden, persönlich in Hamburg",
+        "price": "700.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "700.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": true
+        }
+       },
+       {
+        "@type": "Offer",
+        "name": "Assessment-Center-Vorbereitung, ganztägig in Hamburg",
+        "price": "1350.00",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+         "@type": "PriceSpecification",
+         "price": "1350.00",
+         "priceCurrency": "EUR",
+         "valueAddedTaxIncluded": true
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://puettjer-coaching.de/#birte",
+   "name": "Birte Püttjer-Stoppok",
+   "jobTitle": "Geschäftsführende Gesellschafterin, Business-Coach",
+   "worksFor": {
+    "@id": "https://puettjer-coaching.de/#business"
+   },
+   "image": "https://puettjer-coaching.de/assets/birte.jpg",
+   "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Zertifizierter Business-Coach"
+   },
+   "knowsAbout": [
+    "Leadership",
+    "Teambuilding",
+    "Management Consulting",
+    "Content Marketing",
+    "Karrierecoaching"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://puettjer-coaching.de/#christian",
+   "name": "Christian Püttjer",
+   "jobTitle": "Geschäftsführer Karriereakademie, Karriere- und Bewerbungscoach",
+   "worksFor": {
+    "@id": "https://puettjer-coaching.de/#business"
+   },
+   "image": "https://puettjer-coaching.de/assets/christian.jpg",
+   "description": "Personalberater, Headhunter, Lehrbeauftragter an der European Business School und Autor von über 40 Fachbüchern im Campus Verlag.",
+   "sameAs": [
+    "https://www.amazon.de/stores/Christian-P%C3%BCttjer/author/B0043C29O6"
+   ]
+  },
+  {
+   "@type": "Book",
+   "name": "Das große Bewerbungshandbuch",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Das große Bewerbungshandbuch für Führungskräfte",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Assessment-Center-Training für Führungskräfte",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Das Bewerbungscoaching für Führungskräfte",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "So gewinnen Führungskräfte im Vorstellungsgespräch",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Souverän im Vorstellungsgespräch",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Die erfolgreiche Gehaltsverhandlung",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Die heimlichen Spielregeln der Verhandlung",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Erfolgsfaktor Körpersprache",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Reden ohne Angst",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Zeigen Sie, was Sie können",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "Book",
+   "name": "Keine Macht den Gute-Laune-Dieben",
+   "inLanguage": "de",
+   "author": [
+    {
+     "@id": "https://puettjer-coaching.de/#christian"
+    },
+    {
+     "@type": "Person",
+     "name": "Uwe Schnierda"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "Campus Verlag"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://puettjer-coaching.de/#faq",
+   "inLanguage": "de",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Was kostet ein Coaching bei Püttjer & Püttjer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Für Privatpersonen kostet eine Coaching-Stunde 140 € per Telefon oder Video-Call und 180 € persönlich in Hamburg, jeweils inklusive 19 % Mehrwertsteuer. Feste Pakete gibt es ab 190 €, zum Beispiel die Vorbereitung auf ein Vorstellungsgespräch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was kosten Workshops und Vorträge für Unternehmen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ein Impulsvortrag von 40 bis 60 Minuten kostet 400 €, ein vierstündiger Workshop mit bis zu 8 Teilnehmer*innen 1.200 € und ein Ganztagesworkshop 2.000 €, jeweils netto zuzüglich Mehrwertsteuer sowie Raummiete und Anfahrt. Enthalten sind zwei Abstimmungsgespräche von bis zu 30 Minuten und die Konzeption des Workshops."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ist Coaching auch online möglich?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Alle Einzelcoachings sind per Telefon oder Video-Call möglich. Persönliche Termine finden in unseren Räumen am Krayenkamp 10 in Hamburg statt, direkt am Michel. Außerhalb Hamburgs kommen wir gegen Erstattung von Raummiete und Anfahrt auch zu Ihnen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wie bereiten Sie auf ein Assessment Center vor?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Wir bieten die Assessment-Center-Vorbereitung als Paket an: bis zu 3 Stunden per Telefon oder Video-Call für 400 €, 4 Stunden persönlich in Hamburg für 700 € oder einen ganzen Tag für 1.350 €. Christian Püttjer ist Mitautor des Ratgebers „Assessment-Center-Training für Führungskräfte“ im Campus Verlag."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Für wen ist das Coaching gedacht?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Für Führungskräfte bis in die Vorstandsebene, für Fach- und Nachwuchskräfte vor dem nächsten Karriereschritt und für Unternehmen, die Teams und Führungskräfte entwickeln wollen. Wir haben über 200 C-Level-Coachings und über 500 Leadership-Coachings durchgeführt. Zu unseren Kunden gehören unter anderem Airbus, Allianz, Deutsche Bahn und Siemens Healthineers."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Unterstützen Sie bei Outplacement und beruflicher Neuorientierung?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Outplacement gehört gemeinsam mit Karriereplanung und Management-Audits zu unserem Bereich Kommunikation & Karriere. Wir begleiten Menschen von der Standortbestimmung über die Bewerbung bis zum Vorstellungsgespräch und haben über 1.000 gelungene Karrieresprünge unterstützt."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wer sind die Coaches?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Birte Püttjer-Stoppok ist zertifizierter Business-Coach mit Führungserfahrung im Konzern und im internationalen Consulting. Christian Püttjer ist seit 1990 Geschäftsführer der Karriereakademie, Personalberater und Autor von über 40 Fachbüchern zu Bewerbung und Karriere. Gemeinsam bringen die Geschwister über 50 Jahre Coaching-, Management- und Leadership-Erfahrung mit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wie buche ich einen Termin?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Termine buchen Sie online über unseren Buchungskalender oder direkt per Telefon unter 040 / 36 09 92 23 und per E-Mail an info@puettjer-coaching.de. Für Termine außerhalb der angezeigten Zeitfenster schreiben Sie uns gern."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://puettjer-coaching.de/#website",
+   "url": "https://puettjer-coaching.de/",
+   "name": "Püttjer & Püttjer",
+   "inLanguage": "de",
+   "publisher": {
+    "@id": "https://puettjer-coaching.de/#business"
+   }
+  }
+ ]
+}
+</script>
 <!-- ARTIFACT-HEAD-END -->
 </head>
 <body>
@@ -315,6 +888,7 @@ textarea { min-height: 8rem; resize: vertical; }
       <a href="#preise">Buchung &amp; Preise</a>
       <a href="#ueber-uns">Über uns</a>
       <a href="#referenzen">Referenzen</a>
+      <a href="#faq">FAQ</a>
       <a class="btn" href="#kontakt">Kontakt</a>
     </nav>
   </div>
@@ -324,8 +898,7 @@ textarea { min-height: 8rem; resize: vertical; }
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <p class="eyebrow">Coaching ohne Gedöns · Hamburg</p>
-        <h1>Schnell. Direkt. <em>Erfolgreich.</em></h1>
+        <h1><span class="eyebrow h1-kicker">Coaching in Hamburg · ohne Gedöns</span> Schnell. Direkt. <em>Erfolgreich.</em></h1>
         <p class="lede">Wir helfen Ihnen, authentisch erfolgreich zu sein: in Kommunikation und Karriere, als Führungskraft und als Persönlichkeit. In Seminaren, Workshops und individuellen Coachings.</p>
         <div class="actions">
           <a class="btn" href="#kontakt">Let’s talk</a>
@@ -545,19 +1118,20 @@ textarea { min-height: 8rem; resize: vertical; }
         <p>Unsere Ratgeber zu Bewerbung, Verhandlung, Körpersprache und Auftreten erscheinen im Campus Verlag und wurden unter anderem ins Koreanische, Tschechische und Niederländische übersetzt.</p>
       </div>
       <ul class="books">
-        <li><img src="assets/books/bewerbungshandbuch.jpg" alt="" loading="lazy" width="306" height="420"><span>Das große Bewerbungshandbuch</span></li>
-        <li><img src="assets/books/bewerbungshandbuch-fuehrungskraefte.jpg" alt="" loading="lazy" width="298" height="420"><span>Das große Bewerbungshandbuch für Führungskräfte</span></li>
-        <li><img src="assets/books/assessment-center-fuehrungskraefte.jpg" alt="" loading="lazy" width="280" height="420"><span>Assessment-Center-Training für Führungskräfte</span></li>
-        <li><img src="assets/books/bewerbungscoaching-fuehrungskraefte.jpg" alt="" loading="lazy" width="284" height="420"><span>Das Bewerbungscoaching für Führungskräfte</span></li>
-        <li><img src="assets/books/fuehrungskraefte-vorstellungsgespraech.jpg" alt="" loading="lazy" width="276" height="420"><span>So gewinnen Führungskräfte im Vorstellungsgespräch</span></li>
-        <li><img src="assets/books/souveraen-vorstellungsgespraech.jpg" alt="" loading="lazy" width="289" height="420"><span>Souverän im Vorstellungsgespräch</span></li>
-        <li><img src="assets/books/gehaltsverhandlung.jpg" alt="" loading="lazy" width="280" height="420"><span>Die erfolgreiche Gehaltsverhandlung</span></li>
-        <li><img src="assets/books/spielregeln-verhandlung.jpg" alt="" loading="lazy" width="280" height="420"><span>Die heimlichen Spielregeln der Verhandlung</span></li>
-        <li><img src="assets/books/koerpersprache.jpg" alt="" loading="lazy" width="280" height="420"><span>Erfolgsfaktor Körpersprache</span></li>
-        <li><img src="assets/books/reden-ohne-angst.jpg" alt="" loading="lazy" width="280" height="420"><span>Reden ohne Angst</span></li>
-        <li><img src="assets/books/selbstmarketing.jpg" alt="" loading="lazy" width="280" height="420"><span>Zeigen Sie, was Sie können</span></li>
-        <li><img src="assets/books/gute-laune-dieben.jpg" alt="" loading="lazy" width="280" height="420"><span>Keine Macht den Gute-Laune-Dieben</span></li>
+        <li><img src="assets/books/bewerbungshandbuch.jpg" alt="Buchcover: Das große Bewerbungshandbuch" loading="lazy" width="306" height="420"><span>Das große Bewerbungshandbuch</span></li>
+        <li><img src="assets/books/bewerbungshandbuch-fuehrungskraefte.jpg" alt="Buchcover: Das große Bewerbungshandbuch für Führungskräfte" loading="lazy" width="298" height="420"><span>Das große Bewerbungshandbuch für Führungskräfte</span></li>
+        <li><img src="assets/books/assessment-center-fuehrungskraefte.jpg" alt="Buchcover: Assessment-Center-Training für Führungskräfte" loading="lazy" width="280" height="420"><span>Assessment-Center-Training für Führungskräfte</span></li>
+        <li><img src="assets/books/bewerbungscoaching-fuehrungskraefte.jpg" alt="Buchcover: Das Bewerbungscoaching für Führungskräfte" loading="lazy" width="284" height="420"><span>Das Bewerbungscoaching für Führungskräfte</span></li>
+        <li><img src="assets/books/fuehrungskraefte-vorstellungsgespraech.jpg" alt="Buchcover: So gewinnen Führungskräfte im Vorstellungsgespräch" loading="lazy" width="276" height="420"><span>So gewinnen Führungskräfte im Vorstellungsgespräch</span></li>
+        <li><img src="assets/books/souveraen-vorstellungsgespraech.jpg" alt="Buchcover: Souverän im Vorstellungsgespräch" loading="lazy" width="289" height="420"><span>Souverän im Vorstellungsgespräch</span></li>
+        <li><img src="assets/books/gehaltsverhandlung.jpg" alt="Buchcover: Die erfolgreiche Gehaltsverhandlung" loading="lazy" width="280" height="420"><span>Die erfolgreiche Gehaltsverhandlung</span></li>
+        <li><img src="assets/books/spielregeln-verhandlung.jpg" alt="Buchcover: Die heimlichen Spielregeln der Verhandlung" loading="lazy" width="280" height="420"><span>Die heimlichen Spielregeln der Verhandlung</span></li>
+        <li><img src="assets/books/koerpersprache.jpg" alt="Buchcover: Erfolgsfaktor Körpersprache" loading="lazy" width="280" height="420"><span>Erfolgsfaktor Körpersprache</span></li>
+        <li><img src="assets/books/reden-ohne-angst.jpg" alt="Buchcover: Reden ohne Angst" loading="lazy" width="280" height="420"><span>Reden ohne Angst</span></li>
+        <li><img src="assets/books/selbstmarketing.jpg" alt="Buchcover: Zeigen Sie, was Sie können" loading="lazy" width="280" height="420"><span>Zeigen Sie, was Sie können</span></li>
+        <li><img src="assets/books/gute-laune-dieben.jpg" alt="Buchcover: Keine Macht den Gute-Laune-Dieben" loading="lazy" width="280" height="420"><span>Keine Macht den Gute-Laune-Dieben</span></li>
       </ul>
+      <p class="books-more"><a class="textlink" href="https://www.amazon.de/stores/Christian-P%C3%BCttjer/author/B0043C29O6">Alle Bücher von Christian Püttjer auf Amazon</a></p>
     </div>
   </section>
 
@@ -573,6 +1147,28 @@ textarea { min-height: 8rem; resize: vertical; }
       <ul class="refs">
         <li>Airbus SE</li><li>Allianz SE</li><li>Aldi Einkauf</li><li>Alfred Kärcher SE &amp; Co. KG</li><li>Altana AG</li><li>Alte Leipziger Versicherungen</li><li>AOK</li><li>AXA AG</li><li>BAT GmbH</li><li>BAWAG AG</li><li>Bayer HealthCare AG</li><li>BearingPoint GmbH</li><li>BMW Group</li><li>BNP Paribas S.A.</li><li>BRAIN Biotech AG</li><li>Brose Fahrzeugteile</li><li>Brunel Service</li><li>Caramba Chemie</li><li>Commerzbank AG</li><li>Deutsche Bahn AG</li><li>Deutsche Bank AG</li><li>Deutsche Lufthansa AG</li><li>Deutsche Rentenversicherung</li><li>Deutsche Telekom AG</li><li>E.ON Energie Deutschland</li><li>Festo</li><li>Finanz Informatik</li><li>Fleurop AG</li><li>Genossenschaftsverband e.V.</li><li>GlaxoSmithKline Consumer Healthcare</li><li>Grundfos GmbH</li><li>HDI Global Specialty SE</li><li>Heraeus Holding GmbH</li><li>KPMG AG</li><li>LBS Hessen-Thüringen</li><li>Lidl</li><li>Merck Healthcare Germany</li><li>MTU Aero Engines AG</li><li>OBI</li><li>OKI Europe Ltd.</li><li>Panasonic Marketing Europe</li><li>Philips GmbH</li><li>ProTect Versicherungs AG</li><li>REWE Markt GmbH</li><li>Sana Kliniken AG</li><li>Schaeffler AG</li><li>SEW-EURODRIVE</li><li>Siemens Healthineers AG</li><li>Sony Europe B.V.</li><li>Sopra Steria Group SA</li><li>Südwestbank</li><li>T-Systems International</li><li>Tchibo GmbH</li><li>Thyssenkrupp AG</li><li>TUI AG / TUIfly</li><li>TÜV Süd AG</li><li>UniCredit Bank / HVB</li><li>Unilever Deutschland</li><li>Universitätsklinikum Hamburg-Eppendorf</li><li>VGH Versicherungen</li><li>Volkswagen AG</li><li>XING / New Work SE</li><li>Zwilling Beauty Group</li><li class="more">sowie diverse Ministerien, Verwaltungen und Jobcenter</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Häufige Fragen</p>
+          <h2>Kurz beantwortet.</h2>
+        </div>
+        <p>Die wichtigsten Antworten zu Kosten, Ablauf und Buchung. Alles Weitere klären wir gern persönlich.</p>
+      </div>
+      <dl class="faq">
+        <div><dt>Was kostet ein Coaching bei Püttjer &amp; Püttjer?</dt><dd>Für Privatpersonen kostet eine Coaching-Stunde 140&nbsp;€ per Telefon oder Video-Call und 180&nbsp;€ persönlich in Hamburg, jeweils inklusive 19 % Mehrwertsteuer. Feste Pakete gibt es ab 190&nbsp;€, zum Beispiel die Vorbereitung auf ein Vorstellungsgespräch.</dd></div>
+        <div><dt>Was kosten Workshops und Vorträge für Unternehmen?</dt><dd>Ein Impulsvortrag von 40 bis 60 Minuten kostet 400&nbsp;€, ein vierstündiger Workshop mit bis zu 8 Teilnehmer*innen 1.200&nbsp;€ und ein Ganztagesworkshop 2.000&nbsp;€, jeweils netto zuzüglich Mehrwertsteuer sowie Raummiete und Anfahrt. Enthalten sind zwei Abstimmungsgespräche von bis zu 30 Minuten und die Konzeption des Workshops.</dd></div>
+        <div><dt>Ist Coaching auch online möglich?</dt><dd>Ja. Alle Einzelcoachings sind per Telefon oder Video-Call möglich. Persönliche Termine finden in unseren Räumen am Krayenkamp 10 in Hamburg statt, direkt am Michel. Außerhalb Hamburgs kommen wir gegen Erstattung von Raummiete und Anfahrt auch zu Ihnen.</dd></div>
+        <div><dt>Wie bereiten Sie auf ein Assessment Center vor?</dt><dd>Wir bieten die Assessment-Center-Vorbereitung als Paket an: bis zu 3 Stunden per Telefon oder Video-Call für 400&nbsp;€, 4 Stunden persönlich in Hamburg für 700&nbsp;€ oder einen ganzen Tag für 1.350&nbsp;€. Christian Püttjer ist Mitautor des Ratgebers „Assessment-Center-Training für Führungskräfte“ im Campus Verlag.</dd></div>
+        <div><dt>Für wen ist das Coaching gedacht?</dt><dd>Für Führungskräfte bis in die Vorstandsebene, für Fach- und Nachwuchskräfte vor dem nächsten Karriereschritt und für Unternehmen, die Teams und Führungskräfte entwickeln wollen. Wir haben über 200 C-Level-Coachings und über 500 Leadership-Coachings durchgeführt. Zu unseren Kunden gehören unter anderem Airbus, Allianz, Deutsche Bahn und Siemens Healthineers.</dd></div>
+        <div><dt>Unterstützen Sie bei Outplacement und beruflicher Neuorientierung?</dt><dd>Ja. Outplacement gehört gemeinsam mit Karriereplanung und Management-Audits zu unserem Bereich Kommunikation &amp; Karriere. Wir begleiten Menschen von der Standortbestimmung über die Bewerbung bis zum Vorstellungsgespräch und haben über 1.000 gelungene Karrieresprünge unterstützt.</dd></div>
+        <div><dt>Wer sind die Coaches?</dt><dd>Birte Püttjer-Stoppok ist zertifizierter Business-Coach mit Führungserfahrung im Konzern und im internationalen Consulting. Christian Püttjer ist seit 1990 Geschäftsführer der Karriereakademie, Personalberater und Autor von über 40 Fachbüchern zu Bewerbung und Karriere. Gemeinsam bringen die Geschwister über 50 Jahre Coaching-, Management- und Leadership-Erfahrung mit.</dd></div>
+        <div><dt>Wie buche ich einen Termin?</dt><dd>Termine buchen Sie online über unseren Buchungskalender oder direkt per Telefon unter 040 / 36 09 92 23 und per E-Mail an info@puettjer-coaching.de. Für Termine außerhalb der angezeigten Zeitfenster schreiben Sie uns gern.</dd></div>
+      </dl>
     </div>
   </section>
 
